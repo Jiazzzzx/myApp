@@ -53,7 +53,19 @@ export default new Router({
               path: 'promise',
               name: 'Promise',
               component: () => import("@/views/ESModule/Promise")
+            },
+            {
+              path: 'generator',
+              name: 'Generator',
+              component: () => import("@/views/ESModule/Generator")
             }
+          ]
+        },
+        {
+          path: 'scss',
+          name: 'Scss模块',
+          component: () => import("@/views/ScssModule/ModuleView"),
+          children: [
           ]
         }
       ]
